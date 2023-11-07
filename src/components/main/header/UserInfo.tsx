@@ -1,15 +1,24 @@
 import { UserOutlined } from "@ant-design/icons"
 import { Avatar, Space } from "antd"
+import LoginButton from "./LoginButton"
 
 export const UserInfo = () => {
-  return (
-    <>
-      <Space>
-        <Avatar icon={<UserOutlined />} />
-        <span>用户名</span>
-      </Space>
-    </>
-  )
+  const isLogin = false
+
+  if (isLogin) {
+    return (
+      <>
+        <div className="corsur-pointer">
+          <Space>
+            <Avatar icon={<UserOutlined />} />
+            <span className="text-nowrap">用户名</span>
+          </Space>
+        </div>
+      </>
+    )
+  } else {
+    return <LoginButton></LoginButton>
+  }
 }
 
 export default UserInfo
