@@ -20,6 +20,28 @@ const instance = _axios.create({
 
 instance.interceptors.request.use(
   (config) => {
+    // if (config.method === "post") {
+    //   if (document.cookie) {
+    //     config.data
+    //       ? Object.assign(config.data, {
+    //           cookie: document.cookie,
+    //         })
+    //       : (config.data = {
+    //           cookie: document.cookie,
+    //         })
+    //   }
+    // }
+    // if (config.method === "get") {
+    //   if (document.cookie) {
+    //     config.params
+    //       ? Object.assign(config.params, {
+    //           cookie: document.cookie,
+    //         })
+    //       : (config.params = {
+    //           cookie: document.cookie,
+    //         })
+    //   }
+    // }
     return config
   },
   (error) => {

@@ -1,5 +1,5 @@
 import Header from "@/components/main/header/Header"
-import Sider from "@/components/main/Sider"
+import Sider from "@/components/main/sider/Sider"
 
 const HomeMainPage = () => {
   return (
