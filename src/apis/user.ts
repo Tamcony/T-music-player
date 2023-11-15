@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { axios, handleError } from "./axios"
-import { User, UserDetail } from "./types/user.d"
+import { User, UserDetail } from "./types/user"
 
 export const useUserLogin = () => {
   const [data, setData] = useState<User>()

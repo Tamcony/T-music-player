@@ -16,6 +16,7 @@ export interface CmdError {
 const instance = _axios.create({
   baseURL: "/api",
   timeout: 10000,
+  withCredentials: true,
 })
 
 instance.interceptors.request.use(
